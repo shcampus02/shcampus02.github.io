@@ -1,10 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de-AT">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala Galerie</title>
+    <link rel="icon" type="image/x-icon" href="src/img/favicon_lotus.ico">
+    <script src="https://kit.fontawesome.com/e5b995171c.js" crossorigin="anonymous"></script> <!-- Social Media Icons -->
+
 </head>
-<body>
+
+<body id="galerie">
+
+<!-- Navigation -->
+
+    <nav id="navigation">
+
+        <img id="logo_header" src="src/img/logo-header.png" alt=""> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="moreabout.html">About Mandalas</a></li>
+            <li><a href="faq.html">Häufige Fragen</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li id="instagram-nav"><a href="https://www.instagram.com/sh_mindful_art/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram fa-xl fa-beat-fade-hover"></i></a>
+            </li>
+            <li id="pinterest-nav"><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-pinterest fa-xl fa-beat-fade-hover"></i></a>
+            </li>
+        </ul>
+
+    </nav>
+
+<!-- Title, Subtitel, Filter -->
+
+    <main>
+
+        <div id="title-filter-section" class="flex-container">
+
+            <img id="background-title"
+                 src="src/img/background_title.jpg"
+                 alt=""> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
+
+            <div id="title-section">
+
+                <h1>Galerie</h1>
+                <h2>
+                    Entdecke eine Vielzahl meiner einzigartigen Dot Art Mandalas.
+                    Tauche ein in die Welt der Farben, Formen und Achtsamkeit,
+                    die in jedem meiner Kunstwerke zum Ausdruck kommt.
+                </h2>
+
+            </div>
+
+        </div>
+
+        <!-- Kategorie-Filter -->
+
+        <nav id="filter-nav"> <!-- data-filter für spätere JS Umsetzung -->
+            <ul>
+                <li><a href="#" data-filter="chakra">Chakra Serie</a></li>
+                <li><a href="#" data-filter="wanddekor">Wanddekor</a></li>
+                <li><a href="#" data-filter="notebook">Notizbücher <br>& Lesezeichen</a></li>
+                <li><a href="#" data-filter="candle">Teelichter <br>& Mandala Steine</a></li>
+            </ul>
+        </nav>
+
+<!-- Bildergalerie -->
+
+        <div id="gallery">
+
+            <!-- Beschreibung in Filterbereich Chakra-Serie -->
+
+            <div data-filter="chakra">
+
+                <article id="main-text-chakra">
+
+                    <h3>Chakra Serie</h3>
+
+                    <p>
+                        Chakras sind Energiezentren im Körper, die in vielen östlichen spirituellen Traditionen eine zentrale Rolle spielen.
+                        Sie sind verantwortlich für den Fluss unserer Lebensenergie und beeinflussen sowohl unser körperliches als auch unser geistiges Wohlbefinden.
+                        In der Kunst und Praxis der Achtsamkeit und Meditation spielen Chakras eine bedeutende Rolle.
+                    </p>
+                    <p>
+                        Folgende Mandala Designs wurden von der talentierten Künstlerin Eszter Adejuwon inspiriert.
+                        Du möchtest diese Designs selbst ausprobieren?
+                        Besuche doch die Patreon Tutorials von Mandalavista - weitere Informationen findest du auf ihrer Instagram Seite:
+                        <a href="https://www.instagram.com/mandalavista/">www.instagram.com/mandalavista/</a>
+                    </p>
+
+
+                </article>
+
+                <!-- Bilder in Filter Chakra-Serie -->
+
+                <div data-filter="chakra">
+
+                    <figure>
+                        <img src="src/img/chakra_01.jpg" alt="Mandala Interpretation des Kronenchakras" width="370" height="370">
+                        <div class="overlay-image">
+                            <img src="src/img/overlay_images/overlay_chakra_01.jpg" alt="Detailansicht" width="370" height="370">
+                        </div>
+                        <figcaption>Kronenchakra</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="src/img/chakra_02.jpg" alt="Mandala Interpretation des Hals- und Stirnchakras" width="370" height="370">
+                        <div class="overlay-image">
+                            <img src="src/img/overlay_images/overlay_chakra_02.jpg" alt="Detailansicht" width="370" height="370">
+                        </div>
+                        <figcaption>Halschakra & Stirnchakra</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="src/img/chakra_03.jpg" alt="Mandala Interpretation des Herzchakras" width="370" height="370">
+                        <div class="overlay-image">
+                            <img src="src/img/overlay_images/overlay_chakra_03.jpg" alt="Detailansicht" width="370" height="370">
+                        </div>
+                        <figcaption>Herzchakra</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="src/img/chakra_04.jpg" alt="Mandala Interpretation des Solarplexuschakras" width="370" height="370">
+                        <div class="overlay-image">
+                            <img src="src/img/overlay_images/overlay_chakra_04.jpg" alt="Detailansicht" width="370" height="370">
+                        </div>
+                        <figcaption>Solarplexuschakra</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="src/img/chakra_05.jpg" alt="Mandala Interpretation des Sakralchakras" width="370" height="370">
+                        <div class="overlay-image">
+                            <img src="src/img/overlay_images/overlay_chakra_05.jpg" alt="Detailansicht" width="370" height="370">
+                        </div>
+                        <figcaption>Sakralchakra</figcaption>
+                    </figure>
+
+                    <figure data-filter="chakra" class="image-item">
+                        <img src="src/img/chakra_06.jpg" alt="Mandala Interpretation des Wurzelchakras" width="370" height="370">
+                        <div class="overlay-image">
+                            <img src="src/img/overlay_images/overlay_chakra_06.jpg" alt="Detailansicht" width="370" height="370">
+                        </div>
+                        <figcaption>Wurzelchakra</figcaption>
+                    </figure>
+
+                </div>
+
+            </div>
+
+            <!-- Bilder in Filter Wanddekor -->
+
+
+            <div data-filter="wanddekor" id="square_wanddekor">
+
+                <!-- Platzhalter Square Wanddekor -->
+
+            </div>
+
+
+            <div id="round_wanddekor" data-filter="wanddekor">
+
+                <!-- Platzhalter Round Wanddekor-->
+
+            </div>
+
+
+            <div id="others_wanddekor">
+
+                <!-- Platzhalter Others Wanddekor-->
+
+            </div>
+
+            <!-- Bilder in Filter Notizbücher & Lesezeichen -->
+
+            <div id="notebook">
+
+                <!-- Platzhalter Notebook-->
+
+            </div>
+
+            <!-- Bilder in Filter Teelicher & Mandala Steine -->
+
+            <div id="candle">
+
+                <!-- Platzhalter -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+<!-- Footer -->
+
+    <footer id="footer">
+
+        <nav id="footer-contact">
+            <h3 id="footer-title-contact">
+            Contact & Social
+            </h3>
+            <ul>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li><a href="https://www.instagram.com/sh_mindful_art/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank">Pinterest</a></li>
+            </ul>
+        </nav>
+
+        <div id="footer-copyright">
+            <img id="logo-footer" src="src/img/logo-footer.png" alt="Logo SH Mindful Art">
+            <p>COPYRIGHT © 2023 SH Mindful Art <br> Design BY ©SH Mindful Art</p>
+        </div>
+
+        <nav id="footer-legal">
+            <h3 id="footer-title-legal">
+                Rechtliches
+            </h3>
+            <ul>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+                <li><a href="cookiepolicy.html">Cookie Policy</a></li>
+            </ul>
+        </nav>
+
+    </footer>
 
 </body>
+
 </html>
