@@ -17,9 +17,21 @@ To view the design and layout of the website, you can access the Figma design pr
 
 The Figma design project provides an overview of the website's visual components, including page layouts, color schemes, typography, and more.
 
-## Repository Contents
+## Repository Structure
 
-- **src:** The project's source code is organized into folders, making it easy to navigate and understand the structure.
-- **img:** This directory contains images, graphics, and other media assets used in the website.
-- **doc:** Useful documentation, including this README and any additional notes, will be available here.
-- **issues:** I organised my project through Github issues documenting my tasks.
+The project's repository is structured as follows:
+
+- **src/:** This directory contains the core source code of the website project, organized by file type or functionality:
+    - **css/:** CSS files.
+    - **js/:** JavaScript files.
+    - **html/:** HTML files, organized by pages or sections if needed.
+    - **images/:** Image assets used in the website.
+    - **fonts/:** Font files
+
+- **docs/:** Project documentation, including this README and any additional notes.
+
+- **issues/:** GitHub issues used for project management.
+
+- **LICENSE:** The project's license file.
+
+
