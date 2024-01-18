@@ -1,0 +1,129 @@
+.image-container figure {
+    display: block;
+}
+
+.image-container figure:not([data-filter="chakra"]) {
+    display: none;
+}
+
+.image-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-item:hover .overlay-image {
+    opacity: 1;
+}
+
+.flex-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px auto; /* setzt Abstand zur Navigationsleiste */
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+#filter-nav {
+    border: 3px solid #77978c8e;
+    padding: 5px;
+    border-radius: 30px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+#filter-nav ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#filter-nav ul li {
+    flex: 1;
+    list-style-type: none;
+    text-align: center;
+    font: 400 20px/1.5 Jost, serif; /* Kombiniert Font-Eigenschaften */
+    position: relative;
+    margin: 0;
+}
+
+#filter-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#filter-nav ul li:hover a {
+    background: rgb(231, 224, 217);
+    color: #333;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+
+article {
+    background: rgba(244, 240, 236);
+    border-radius: 70px;
+    padding: 20px 40px;
+    text-align: center;
+}
+p {
+    display: flex;
+    flex-direction: column;
+    color: #4D5053;
+    font-family: Jost, serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    word-wrap: break-word;
+    z-index: 3;
+}
+
+h3 {
+    font-family: DM Serif Display, serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+.gallery-flex-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     /* setzt Abstand zur Navigationsleiste */
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}

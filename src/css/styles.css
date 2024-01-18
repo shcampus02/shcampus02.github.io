@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'DMSerifDisplay';
+    src: url('../fonts/DMSerifDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Jost-Black';
+    src: url('../fonts/Jost-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Jost-Bold';
+    src: url('../fonts/Jost-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Jost-ExtraBold';
+    src: url('../fonts/Jost-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Jost-ExtraLight';
+    src: url('../fonts/Jost-ExtraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Jost-Light';
+    src: url('../fonts/Jost-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Jost-Medium';
+    src: url('../fonts/Jost-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Jost-Regular';
+    src: url('../fonts/Jost-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Jost-SemiBold';
+    src: url('../fonts/Jost-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Jost-Thin';
+    src: url('../fonts/Jost-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Jost-VariableFont';
+    src: url('../fonts/Jost-VariableFont_wght.ttf');
+}
+
+html {
+  font-size: 16px; /* damit entspricht 1rem 16px */
+}
+
+. {
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: 'DMSerifDisplay', 'Jost', serif;
+    background: #F9F8F8;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#title-section {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#background-title {
+    border-radius: 70px;
+    height: auto;
+    position: absolute;
+    width: 80%; /* definiert Breite der Titel-Box */
+    z-index: 1;
+}
+
+h1 {
+    color: #4D5053;
+    font-family: 'DMSerifDisplay', serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    z-index: 2;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: #4D5053;
+    font-family: 'Jost', serif;
+    font-size: 30px;
+    font-weight: 300;
+    word-wrap: break-word;
+    text-align: center;
+    z-index: 2;
+}
+

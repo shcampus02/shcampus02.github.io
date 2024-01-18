@@ -1,0 +1,117 @@
+#navigation {
+    background-color:rgba(244, 240, 236);
+    border-bottom: 3px solid #77978c8e; /*Rahmenlinie unten*/
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Centriert entlang der Hauptachse */
+    margin: 0;
+    padding: 0;
+    position: fixed; /*Position beim Scrollen*/
+    top: 0;
+    width: 100%; /*Breite*/
+    height: 80px;
+    z-index: 5; /*bestimmt die Reihenfolge der Ebenen - höherer Index wird vor niedrigerem angezeigt*/
+}
+
+#logo_header {
+    display: inline-block;
+    height: 50px;
+    margin-left: 240px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    top: 0%;
+    width: 240px;
+}
+
+#navigation ul {
+    letter-spacing: -0.5px;
+    margin-right: 250px;
+    padding: 0;
+}
+
+#navigation ul li { /*Abstand zwischen Navigationselementen*/
+    box-sizing: border-box;
+    display: inline-block; /*Elemente nebeneinander*/
+    list-style-type: none; /*ohne Aufzählungspunkte*/
+    margin: 0;
+    padding: 10px; /*Innenabstand oben/unten, li/re*/
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#navigation ul li:not(#instagram-nav):not(#pinterest-nav) a:not([aria-current]) { /*restliche Texteinstellungen Navigation*/
+    box-sizing: border-box;
+    color:black;
+    cursor: pointer;
+    font-family: Jost;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px; /*damit Hover Effekt besser aussieht*/
+    text-decoration:none; /*Unterstriche entfernen*/
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+[aria-current] {
+    box-sizing: border-box;
+    color:#77978cdc;
+    cursor: pointer;
+    font-family: Jost;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 10px; /*damit Hover Effekt besser aussieht*/
+    text-decoration:none; /*Unterstriche entfernen*/
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.fab {
+    color: #77978cdc;
+    transition: color 0.5s ease;
+}
+
+#instagram-nav ul li a,
+#pinterest-nav ul li a { /*restliche Texteinstellungen Navigation*/
+    box-sizing: border-box;
+    color:black;
+    cursor: pointer;
+    font-family: Jost;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px; /*damit Hover Effekt besser aussieht*/
+    text-decoration:none; /*Unterstriche entfernen*/
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/*Hover Effekt*/
+
+#navigation ul li:not(#instagram-nav):not(#pinterest-nav) a:after {
+    content: '';
+    background: rgb(231, 224, 217);
+    border-radius: 30px;
+    bottom: 0;
+    display: block;
+    height: 0px;
+    left: 0;
+    margin: 0;
+    position:absolute;
+    transition: width 0.2s;
+    width: 0;
+    z-index: -3;
+}
+
+#navigation ul li:not(#instagram-nav):not(#pinterest-nav) a:hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+/*Hover Effekt Ausnahme Socials*/
+
+.fa-beat-fade-hover:hover {
+    animation: fa-beat-fade 1s infinite linear;
+}
