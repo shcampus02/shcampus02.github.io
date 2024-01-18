@@ -31,6 +31,7 @@ The project's repository is structured as follows:
 - **docs/:** Project documentation, including this README and any additional notes.
 
 - **issues/:** GitHub issues used for project management.
+    - Note: For efficiency reasons, some of the issues formulated in this project were assisted by OpenAI's ChatGPT. This was done to streamline the ideation process and ensure clarity in issue documentation. Transparency is vital, and it's important to acknowledge the use of AI assistance in these aspects of the project.
 
 - **LICENSE:** The project's license file.
 
