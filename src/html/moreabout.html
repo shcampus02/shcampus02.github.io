@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>More about Mandalas</title>
     <link rel="icon" type="image/x-icon" href="/src/img/favicon_lotus.ico">
+    <link rel="stylesheet" href="/src/css/moreabout.css">
+    <link rel="stylesheet" href="/src/css/navigation.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <script src="https://kit.fontawesome.com/e5b995171c.js" crossorigin="anonymous"></script> <!-- Social Media Icons -->
 </head>
 
 <body id="more-about-mandalas">
@@ -19,11 +24,19 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="moreabout.html">About Mandalas</a></li>
+            <li><a aria-current="moreabout.html">About Mandalas</a></li>
             <li><a href="faq.html">Häufige Fragen</a></li>
             <li><a href="contact.html">Kontakt</a></li>
-            <li><a href="https://www.instagram.com/sh_mindful_art/" target="_blank">Instagram</a></li> <!-- durch Social Media Icon ersetzen -->
-            <li><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank">Pinterest</a></li> <!-- durch Social Media Icon ersetzen -->
+            <li id="instagram-nav">
+                <a href="https://www.instagram.com/sh_mindful_art/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-xl fa-beat-fade-hover"></i>
+                </a>
+            </li>
+            <li id="pinterest-nav">
+                <a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                    <i class="fab fa-pinterest fa-xl fa-beat-fade-hover"></i>
+                </a>
+            </li>
         </ul>
 
     </nav>
@@ -32,9 +45,14 @@
 
     <main>
 
-        <h1>Die Geschichte hinter der Mandala Kunst</h1>
+        <section id="title-section">
 
-        <img src="../img/background_title.jpg" alt=""> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
+            <h1>Die Geschichte hinter der Mandala Kunst</h1>
+            <img id="background-title"
+                 src="../img/background_title.jpg"
+                 alt=""> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
+
+        </section>
 
         <article>
             <h2>Wo sie herkommen</h2>
@@ -66,34 +84,36 @@
 
 <!-- Footer -->
 
-    <footer id="footer">
+    <footer class="footer-flex-container">
 
-        <nav id="footer-contact">
-            <h3 id="footer-title-contact">
+        <section id="footer-contact" class="footer-flex-item">
+
+            <h2 id="footer-title-contact">
             Contact & Social
-            </h3>
+            </h2>
             <ul>
                 <li><a href="contact.html">Kontakt</a></li>
-                <li><a href="https://www.instagram.com/sh_mindful_art/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank">Pinterest</a></li>
+                <li id="instagram"><a href="https://www.instagram.com/sh_mindful_art/" target="_blank">Instagram</a></li>
+                <li id="pinterest"><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank">Pinterest</a></li>
             </ul>
-        </nav>
+        </section>
 
-        <div id="footer-copyright">
+        <section id="footer-copyright" class="footer-flex-item">
             <img id="logo-footer" src="../img/logo-footer.png" alt="Logo SH Mindful Art">
-            <p>COPYRIGHT © 2023 SH Mindful Art <br> Design BY ©SH Mindful Art</p>
-        </div>
+            <p>COPYRIGHT © 2023 SH Mindful Art </br>
+            Design BY ©SH Mindful Art</p>
+        </section>
 
-        <nav id="footer-legal">
-            <h3 id="footer-title-legal">
+        <section id="footer-legal" class="footer-flex-item">
+            <h2 id="footer-title-legal">
                 Rechtliches
-            </h3>
+            </h2>
             <ul>
-                <li><a href="">Impressum</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
                 <li><a href="">Datenschutz</a></li>
                 <li><a href="">Cookie Policy</a></li>
             </ul>
-        </nav>
+        </section>
 
     </footer>
 
