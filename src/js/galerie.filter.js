@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     const filterNavElements = document.querySelector('#filter-nav').querySelectorAll('a');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    const galleryContainers = document.querySelectorAll('.gallery-flex-container');
 
     filterNavElements.forEach((element) => {
         element.addEventListener('click', (event) => {
@@ -12,9 +12,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
             const filterValue = element.getAttribute('data-filter');
 
-            Array.from(galleryItems).forEach((item) => {
+            Array.from(galleryContainers).forEach((item) => {
                 if(filterValue === 'all' || item.getAttribute('data-filter') === filterValue) {
-                    item.style.display = 'block';
+                    item.style.display = 'flex';
                 } else {
                     item.style.display = 'none';
                 }
