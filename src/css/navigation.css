@@ -1,6 +1,10 @@
-#navigation {
+/* NAVIGATION BAR
+----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#navigation { /*Ganzer Navigationsblock */
+    align-items: center;
     background-color:rgba(244, 240, 236);
-    border-bottom: 3px solid #77978c8e; /*Rahmenlinie unten*/
+    border-bottom: 3px solid #77978c8e; /*Rahmenlinie unten vorher: #CDA274*/
     display: flex; /* Flexbox */
     justify-content: space-between; /* Centriert entlang der Hauptachse */
     margin: 0;
@@ -8,7 +12,7 @@
     position: fixed; /*Position beim Scrollen*/
     top: 0;
     width: 100%; /*Breite*/
-    height: 80px;
+    height: max-content;
     z-index: 5; /*bestimmt die Reihenfolge der Ebenen - höherer Index wird vor niedrigerem angezeigt*/
 }
 
@@ -16,10 +20,10 @@
     display: inline-block;
     height: 50px;
     margin-left: 240px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     position: relative;
-    top: 0%;
+    top: 0;
     width: 240px;
 }
 
@@ -40,55 +44,66 @@
     vertical-align: middle;
 }
 
+/* NAVIGATIONSELEMENTE ALLGEMEIN
+----------------------------------------------------------------------------------------------------------------------------------------*/
+
 #navigation ul li:not(#instagram-nav):not(#pinterest-nav) a:not([aria-current]) { /*restliche Texteinstellungen Navigation*/
     box-sizing: border-box;
     color:black;
     cursor: pointer;
-    font-family: Jost;
     font-size: 15px;
     font-weight: 300;
-    margin: 0px;
+    margin: 0;
     padding: 10px; /*damit Hover Effekt besser aussieht*/
     text-decoration:none; /*Unterstriche entfernen*/
     text-transform: uppercase;
     z-index: 2;
 }
 
+/* NAVIGATIONSELEMENT - AKTUELLE SEITE
+----------------------------------------------------------------------------------------------------------------------------------------*/
+
 [aria-current] {
     box-sizing: border-box;
     color:#77978cdc;
     cursor: pointer;
-    font-family: Jost;
     font-size: 15px;
     font-weight: 500;
-    margin: 0px;
+    margin: 0;
     padding: 10px; /*damit Hover Effekt besser aussieht*/
     text-decoration:none; /*Unterstriche entfernen*/
     text-transform: uppercase;
     z-index: 2;
 }
+
+/* SOCIAL LOGOS
+----------------------------------------------------------------------------------------------------------------------------------------*/
 
 .fab {
     color: #77978cdc;
     transition: color 0.5s ease;
 }
 
+.fa-beat-fade-hover:hover {
+    animation: fa-beat-fade 1s infinite linear;
+}
+
 #instagram-nav ul li a,
-#pinterest-nav ul li a { /*restliche Texteinstellungen Navigation*/
+#pinterest-nav ul li a {
     box-sizing: border-box;
     color:black;
     cursor: pointer;
-    font-family: Jost;
     font-size: 15px;
     font-weight: 300;
-    margin: 0px;
-    padding: 0px; /*damit Hover Effekt besser aussieht*/
+    margin: 0;
+    padding: 0; /*damit Hover Effekt besser aussieht*/
     text-decoration:none; /*Unterstriche entfernen*/
     text-transform: uppercase;
     z-index: 1;
 }
 
-/*Hover Effekt*/
+/* HOVER EFFEKTE NAVIGATION
+----------------------------------------------------------------------------------------------------------------------------------------*/
 
 #navigation ul li:not(#instagram-nav):not(#pinterest-nav) a:after {
     content: '';
@@ -96,7 +111,7 @@
     border-radius: 30px;
     bottom: 0;
     display: block;
-    height: 0px;
+    height: 0;
     left: 0;
     margin: 0;
     position:absolute;
@@ -110,8 +125,6 @@
     width: 100%;
 }
 
-/*Hover Effekt Ausnahme Socials*/
+/* RESPONSIVE NAVIGATION BAR
+----------------------------------------------------------------------------------------------------------------------------------------*/
 
-.fa-beat-fade-hover:hover {
-    animation: fa-beat-fade 1s infinite linear;
-}

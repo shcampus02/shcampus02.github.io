@@ -1,50 +1,11 @@
-.image-container figure {
-    display: block;
-}
-
-.image-container figure:not([data-filter="chakra"]) {
-    display: none;
-}
-
-.image-item {
-    position: relative;
-    overflow: hidden;
-}
-
-.overlay-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.image-item:hover .overlay-image {
-    opacity: 1;
-}
-
-.flex-container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 60px auto; /* setzt Abstand zur Navigationsleiste */
-    margin-bottom: 30px;
-    width: 80%;
-}
-
-.flex-item {
-    margin: 10px;
-}
+/* GALERIE FILTER
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 #filter-nav {
     border: 3px solid #77978c8e;
-    padding: 5px;
-    border-radius: 30px;
+    border-radius: 20px;
     width: 80%;
-    margin-bottom: 30px;
+    z-index: 4;
 }
 
 #filter-nav ul {
@@ -80,50 +41,89 @@
 #filter-nav ul li:hover a {
     background: rgb(231, 224, 217);
     color: #333;
-    border-radius: 25px;
+    border-radius: 19px;
     text-decoration: none;
 }
 
+/* IMAGE GALLERY
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-article {
-    background: rgba(244, 240, 236);
-    border-radius: 70px;
-    padding: 20px 40px;
-    text-align: center;
+#gallery {
+    width: 100%; /* 3/4 der Breite der Seite */
+    margin: 0 auto; /* zentriert das Element horizontal auf der Seite */
 }
-p {
-    display: flex;
-    flex-direction: column;
-    color: #4D5053;
-    font-family: Jost, serif;
-    font-size: 20px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    line-height: 40px;
-    word-wrap: break-word;
-    z-index: 3;
-}
-
-h3 {
-    font-family: DM Serif Display, serif;
-    font-size: 40px;
-    font-weight: 300;
-}
-
 
 .gallery-flex-container {
-    align-items: center;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-     /* setzt Abstand zur Navigationsleiste */
-    margin-bottom: 30px;
-    width: 80%;
+    justify-content: space-between; /* verteilt Elemente gleichmäßig im Container */
+    flex-wrap: wrap; /* erlaubt Elementen in eine neue Linie zu gehen, wenn der Platz nicht ausreicht */
 }
 
 .image-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: calc(33.33% - 20px); /* gibt jedem Bild 1/3 des Container Platzes und zieht 20px für den Abstand ab */
+    margin-bottom: 20px; /* Abstand zwischen den Bildern vertikal  */
+    position: relative;
+    border-radius: 70px;
 }
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 70px;
+    border: 1px solid #CDA274;
+}
+
+/* SUBTITLE IMAGES
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+.image-container figcaption {
+    font-size: 0.8rem;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* OVERLAY IMAGES
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Definiert die Position, die Größe und die Deckkraft des .overlay-image Elements und fügt eine Übergangseffekt hinzu */
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Ändert die Deckkraft des .overlay-image Elements beim Hover auf .image-item */
+.image-container:hover .overlay-image {
+    opacity: 1;
+}
+
+
+/* RESPONSIVE GALLERY
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+    .image-container {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .image-container {
+        flex-basis: calc(33.33% - 20px);
+    }
+}
+
+
+
+
+
+
+
+
