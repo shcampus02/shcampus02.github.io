@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mandala Galerie</title>
     <link rel="icon" type="image/x-icon" href="/src/img/favicon_lotus.ico">
+    <link rel="stylesheet" href="/src/css/galerie.css">
+    <link rel="stylesheet" href="/src/css/navigation.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <script src="https://kit.fontawesome.com/e5b995171c.js" crossorigin="anonymous"></script> <!-- Social Media Icons -->
 </head>
 
 <body id="galerie">
@@ -18,12 +23,20 @@
 
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="galerie.html" aria-current="page">Galerie</a></li>
             <li><a href="moreabout.html">About Mandalas</a></li>
             <li><a href="faq.html">Häufige Fragen</a></li>
             <li><a href="contact.html">Kontakt</a></li>
-            <li><a href="https://www.instagram.com/sh_mindful_art/" target="_blank">Instagram</a></li> <!-- durch Social Media Icon ersetzen -->
-            <li><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank">Pinterest</a></li> <!-- durch Social Media Icon ersetzen -->
+            <li id="instagram-nav">
+                <a href="https://www.instagram.com/sh_mindful_art/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-xl fa-beat-fade-hover"></i>
+                </a>
+            </li>
+            <li id="pinterest-nav">
+                <a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                    <i class="fab fa-pinterest fa-xl fa-beat-fade-hover"></i>
+                </a>
+            </li>
         </ul>
 
     </nav>
@@ -32,192 +45,426 @@
 
     <main>
 
-        <div id="title-filter-section" class="flex-container">
-
-            <img id="background-title"
-                 src="../img/background_title.jpg"
-                 alt=""> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
-
-            <div id="title-section">
+        <section id="title-section">
 
                 <h1>Galerie</h1>
                 <h2>
-                    Entdecke eine Vielzahl meiner einzigartigen Dot Art Mandalas.
+                    Entdecke eine Vielzahl meiner einzigartigen Dot Art Mandalas. <br />
                     Tauche ein in die Welt der Farben, Formen und Achtsamkeit,
                     die in jedem meiner Kunstwerke zum Ausdruck kommt.
                 </h2>
 
-            </div>
-
-        </div>
+                <img id="background-title"
+                 src="../img/background_title.jpg"
+                 alt=""> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
 
         <!-- Kategorie-Filter -->
+            <nav id="filter-nav"> <!-- data-filter für spätere JS Umsetzung -->
+                <ul>
+                    <li><a href="#" data-filter="chakra">Chakra Serie</a></li>
+                    <li><a href="#" data-filter="wanddekor">Wanddekor</a></li>
+                    <li><a href="#" data-filter="notebook">Notizbücher <br>& Lesezeichen</a></li>
+                    <li><a href="#" data-filter="candle">Teelichter <br>& Mandala Steine</a></li>
+                </ul>
+            </nav>
 
-        <nav id="filter-nav"> <!-- data-filter für spätere JS Umsetzung -->
-            <ul>
-                <li><a href="#" data-filter="chakra">Chakra Serie</a></li>
-                <li><a href="#" data-filter="wanddekor">Wanddekor</a></li>
-                <li><a href="#" data-filter="notebook">Notizbücher <br>& Lesezeichen</a></li>
-                <li><a href="#" data-filter="candle">Teelichter <br>& Mandala Steine</a></li>
-            </ul>
-        </nav>
+        </section>
+
 
 <!-- Bildergalerie -->
 
         <div id="gallery">
 
-            <!-- Beschreibung in Filterbereich Chakra-Serie -->
+            <!-- Beschreibung in Filter Chakra-Serie -->
 
-            <div data-filter="chakra">
+            <article id="main-text-chakra" class="gallery-flex-container" data-filter="chakra">
 
-                <article id="main-text-chakra">
+                <h3>Chakra Serie</h3>
+                <p>
+                    Chakras sind Energiezentren im Körper, die in vielen östlichen spirituellen Traditionen eine zentrale Rolle spielen.
+                    Sie sind verantwortlich für den Fluss unserer Lebensenergie und beeinflussen sowohl unser körperliches als auch unser geistiges Wohlbefinden.
+                    In der Kunst und Praxis der Achtsamkeit und Meditation spielen Chakras eine bedeutende Rolle.
+                </p>
+            </article>
 
-                    <h3>Chakra Serie</h3>
-
-                    <p>
-                        Chakras sind Energiezentren im Körper, die in vielen östlichen spirituellen Traditionen eine zentrale Rolle spielen.
-                        Sie sind verantwortlich für den Fluss unserer Lebensenergie und beeinflussen sowohl unser körperliches als auch unser geistiges Wohlbefinden.
-                        In der Kunst und Praxis der Achtsamkeit und Meditation spielen Chakras eine bedeutende Rolle.
-                    </p>
-                    <p>
-                        Folgende Mandala Designs wurden von der talentierten Künstlerin Eszter Adejuwon inspiriert.
-                        Du möchtest diese Designs selbst ausprobieren?
-                        Besuche doch die Patreon Tutorials von Mandalavista - weitere Informationen findest du auf ihrer Instagram Seite:
-                        <a href="https://www.instagram.com/mandalavista/">www.instagram.com/mandalavista/</a>
-                    </p>
-
-
-                </article>
+            <div class="gallery-flex-container" data-filter="chakra">
 
                 <!-- Bilder in Filter Chakra-Serie -->
 
-                <div data-filter="chakra">
+                <figure class="image-container">
+                    <img src="/src/img/chakra_01.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_chakra_01.jpg" alt="Detailansicht" width="1455" height="1456">
+                    </div>
+                    <figcaption>Kronenchakra</figcaption>
+                </figure>
 
-                    <figure>
-                        <img src="../img/chakra_01.jpg" alt="Mandala Interpretation des Kronenchakras" width="370" height="370">
-                        <div class="overlay-image">
-                            <img src="../img/overlay_images/overlay_chakra_01.jpg" alt="Detailansicht" width="370" height="370">
-                        </div>
-                        <figcaption>Kronenchakra</figcaption>
-                    </figure>
+                <figure class="image-container">
+                    <img src="/src/img/chakra_02.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_chakra_02.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption>Halschakra & Stirnchakra</figcaption>
+                </figure>
 
-                    <figure>
-                        <img src="../img/chakra_02.jpg" alt="Mandala Interpretation des Hals- und Stirnchakras" width="370" height="370">
-                        <div class="overlay-image">
-                            <img src="../img/overlay_images/overlay_chakra_02.jpg" alt="Detailansicht" width="370" height="370">
-                        </div>
-                        <figcaption>Halschakra & Stirnchakra</figcaption>
-                    </figure>
+                <figure class="image-container">
+                    <img src="/src/img/chakra_03.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_chakra_03.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption>Herzchakra</figcaption>
+                </figure>
 
-                    <figure>
-                        <img src="../img/chakra_03.jpg" alt="Mandala Interpretation des Herzchakras" width="370" height="370">
-                        <div class="overlay-image">
-                            <img src="../img/overlay_images/overlay_chakra_03.jpg" alt="Detailansicht" width="370" height="370">
-                        </div>
-                        <figcaption>Herzchakra</figcaption>
-                    </figure>
+                <figure class="image-container">
+                    <img src="/src/img/chakra_04.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_chakra_04.jpg" alt="Detailansicht" width="1512" height="1512">
+                    </div>
+                    <figcaption>Solarplexuschakra</figcaption>
+                </figure>
 
-                    <figure>
-                        <img src="../img/chakra_04.jpg" alt="Mandala Interpretation des Solarplexuschakras" width="370" height="370">
-                        <div class="overlay-image">
-                            <img src="../img/overlay_images/overlay_chakra_04.jpg" alt="Detailansicht" width="370" height="370">
-                        </div>
-                        <figcaption>Solarplexuschakra</figcaption>
-                    </figure>
+                <figure class="image-container">
+                    <img src="/src/img/chakra_05.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_chakra_05.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption>Sakralchakra</figcaption>
+                </figure>
 
-                    <figure>
-                        <img src="../img/chakra_05.jpg" alt="Mandala Interpretation des Sakralchakras" width="370" height="370">
-                        <div class="overlay-image">
-                            <img src="../img/overlay_images/overlay_chakra_05.jpg" alt="Detailansicht" width="370" height="370">
-                        </div>
-                        <figcaption>Sakralchakra</figcaption>
-                    </figure>
-
-                    <figure data-filter="chakra" class="image-item">
-                        <img src="../img/chakra_06.jpg" alt="Mandala Interpretation des Wurzelchakras" width="370" height="370">
-                        <div class="overlay-image">
-                            <img src="../img/overlay_images/overlay_chakra_06.jpg" alt="Detailansicht" width="370" height="370">
-                        </div>
-                        <figcaption>Wurzelchakra</figcaption>
-                    </figure>
-
-                </div>
+                <figure class="image-container">
+                    <img src="/src/img/chakra_06.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_chakra_06.jpg" alt="Detailansicht" width="1512" height="1512">
+                    </div>
+                    <figcaption>Wurzelchakra</figcaption>
+                </figure>
 
             </div>
+
+            <aside class="gallery-flex-container" data-filter="chakra">
+                <p>
+                    Diese Mandala Designs wurden von der talentierten Künstlerin Eszter Adejuwon inspiriert.
+                    Du möchtest diese Designs selbst ausprobieren?
+                    Besuche doch die Patreon Tutorials von Mandalavista - weitere Informationen findest du auf ihrer Instagram Seite:
+                </p>
+                <a href="https://www.instagram.com/mandalavista/">Hier geht es zu Mandalavista's Instagram Profil</a>
+            </aside>
+
 
             <!-- Bilder in Filter Wanddekor -->
 
+                <!-- Square Wanddekor-->
 
-            <div data-filter="wanddekor" id="square_wanddekor">
+            <div class="gallery-flex-container" data-filter="wanddekor">
 
-                <!-- Platzhalter Square Wanddekor -->
+                <figure class="image-container">
+                    <img src="/src/img/square_1.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_square_1.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/square_2.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_square_2.jpg" alt="Detailansicht" width="250" height="250">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/square_3.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_square_3.jpg" alt="Detailansicht" width="250" height="250">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/square_4.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_square_4.jpg" alt="Detailansicht" width="250" height="250">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
 
             </div>
 
+                <!-- Round Wanddekor-->
 
-            <div id="round_wanddekor" data-filter="wanddekor">
+            <div class="gallery-flex-container" data-filter="wanddekor">
 
-                <!-- Platzhalter Round Wanddekor-->
+                <figure class="image-container">
+                    <img src="/src/img/round_1.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_round_1.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_2.png" alt="" width="1547" height="1547">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_round_2.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_3.png" alt="" width="942" height="942">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_round_3.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_4.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_round_4.jpg" alt="Detailansicht" width="1739" height="1739">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_5.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_round_5.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_6.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_round_6.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_7.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_round_7.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_8.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src=" " alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_9.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_round_9.jpg" alt="Detailansicht" width="1512" height="1512">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_10.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_round_10.jpg" alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_11.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="                      " alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_12.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="                  " alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_13.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="                       " alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_14.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="                        " alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/round_15.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="                        " alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
 
             </div>
 
+                <!-- Others Wanddekor-->
 
-            <div id="others_wanddekor">
+            <div class="gallery-flex-container" data-filter="wanddekor">
 
-                <!-- Platzhalter Others Wanddekor-->
+                <figure class="image-container">
+                    <img src="/src/img/others_1.png" alt="" width="1080" height="1080">
+                    <div class="overlay-image">
+                        <img src="                        " alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/others_2.png" alt="" width="1080" height="1080">
+                    <div class="overlay-image">
+                        <img src="                        " alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/others_3.jpg" alt="" width="1512" height="1512">
+                    <div class="overlay-image">
+                        <img src="                        " alt="Detailansicht" width="350" height="350">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
 
             </div>
 
             <!-- Bilder in Filter Notizbücher & Lesezeichen -->
 
-            <div id="notebook">
+            <div class="gallery-flex-container" data-filter="notebook">
 
-                <!-- Platzhalter Notebook-->
+                <figure class="image-container">
+                    <img src="/src/img/notebook_1.png" alt="" width="1080" height="1080">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/notebook_2.jpg" alt="" width="2048" height="2048">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/bookmark_1.jpg" alt="" width="1609" height="1609">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/bookmark_2.png" alt="" width="1697" height="1697">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/notebook_3.png" alt="" width="1080" height="1080">
+                    <figcaption></figcaption>
+                </figure>
 
             </div>
 
             <!-- Bilder in Filter Teelicher & Mandala Steine -->
 
-            <div id="candle">
+            <div class="gallery-flex-container" data-filter="candle" >
 
-                <!-- Platzhalter -->
+                <figure class="image-container">
+                    <img src="/src/img/candle_1.png" alt="" width="1080" height="1080">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/candle_2.png" alt="" width="1080" height="1080">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/stone_1.png" alt="" width="1126" height="1126">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/candle_3.png" alt="" width="1929" height="1929">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/smallmandala_1.png" alt="" width="1080" height="1080">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/stone_2.png" alt="" width="2048" height="2048">
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/stone_3.png" alt="" width="1126" height="1126">
+                    <div class="overlay-image">
+                        <img src="/src/img/overlay_images/overlay_stone_3.jpg" alt="Detailansicht" width="500" height="500">
+                    </div>
+                    <figcaption></figcaption>
+                </figure>
+
+                <figure class="image-container">
+                    <img src="/src/img/box_1.png" alt="" width="1080" height="1080">
+                    <figcaption></figcaption>
+                </figure>
 
             </div>
 
         </div>
 
+    <script src="/src/js/galerie.filter.js"></script>
+
     </main>
 
 <!-- Footer -->
 
-    <footer id="footer">
+    <footer class="footer-flex-container">
 
-        <nav id="footer-contact">
-            <h3 id="footer-title-contact">
+        <section id="footer-contact" class="footer-flex-item">
+
+            <h2 id="footer-title-contact">
             Contact & Social
-            </h3>
+            </h2>
             <ul>
                 <li><a href="contact.html">Kontakt</a></li>
-                <li><a href="https://www.instagram.com/sh_mindful_art/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank">Pinterest</a></li>
+                <li id="instagram"><a href="https://www.instagram.com/sh_mindful_art/" target="_blank">Instagram</a></li>
+                <li id="pinterest"><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank">Pinterest</a></li>
             </ul>
-        </nav>
+        </section>
 
-        <div id="footer-copyright">
+        <section id="footer-copyright" class="footer-flex-item">
             <img id="logo-footer" src="../img/logo-footer.png" alt="Logo SH Mindful Art">
-            <p>COPYRIGHT © 2023 SH Mindful Art <br> Design BY ©SH Mindful Art</p>
-        </div>
+            <p>COPYRIGHT © 2023 SH Mindful Art </br>
+            Design BY ©SH Mindful Art</p>
+        </section>
 
-        <nav id="footer-legal">
-            <h3 id="footer-title-legal">
+        <section id="footer-legal" class="footer-flex-item">
+            <h2 id="footer-title-legal">
                 Rechtliches
-            </h3>
+            </h2>
             <ul>
-                <li><a href="">Impressum</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
                 <li><a href="">Datenschutz</a></li>
                 <li><a href="">Cookie Policy</a></li>
             </ul>
-        </nav>
+        </section>
 
     </footer>
 
