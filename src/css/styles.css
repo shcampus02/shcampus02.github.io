@@ -75,7 +75,7 @@ body {
         word-wrap: break-word;
         z-index: 2;
         margin-bottom: 0px;
-        padding-top: 30px;
+        margin-top: 0px;
     }
 
     h2 {
@@ -101,7 +101,7 @@ body {
     /* TEXT BLOCKS
     ------------------------------------------*/
 
-    p, article, aside {
+    p, article, aside, details {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -118,20 +118,39 @@ body {
         background: rgba(244, 240, 236);
         border-radius: 70px;
         padding: 10px 30px;
+        margin: 20px;
+    }
+
+    article > h2 {
+        color: #4D5053;
+        font-family: Poppins-Regular, sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 30px;
+        word-wrap: break-word;
+        text-align: center;
+        z-index: 2;
+    }
+
+    details {
+        padding: 20px;
+    }
+
+    details > summary {
+        font-family: Poppins-Regular, sans-serif;
+        font-weight: 600;
+        margin-bottom: 10px;
     }
 
 /* MAIN SECTION
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
 main {
-    margin: 0px auto; /* setzt Abstand zur Navigationsleiste */
-    /*min-height: 100vh;*/
+    margin: 100px auto; /* setzt Abstand zur Navigationsleiste */
     max-width: 980px;
 }
 
-section {
-    margin: 20px;
-}
+
 
 
 /* TITLE SECTIONS
@@ -146,7 +165,7 @@ section {
     justify-content: center;
     position: relative;
     width: 100%;
-
+    padding: 10px 0;
 }
 
 #background-title {
@@ -154,10 +173,10 @@ section {
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    /*top: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
     z-index: 1;
 }
 
