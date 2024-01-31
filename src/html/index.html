@@ -6,88 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dot Art Mandalas by SH Mindful Art</title>
     <link rel="icon" type="image/x-icon" href="/src/img/favicon_lotus.ico">
+    <link rel="stylesheet" href="/src/css/landingpage.css">
+    <link rel="stylesheet" href="/src/css/navigation.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/footer.css">
+    <script src="https://kit.fontawesome.com/e5b995171c.js" crossorigin="anonymous"></script> <!-- Social Media Icons -->
 </head>
 
 <body id="landingpage">
 
 <!-- Navigation -->
 
-    <nav id="navigation">
+<nav id="navigation">
 
-        <img id="logo_header" src="../img/logo-header.png" alt=""> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
+    <img id="logo_header" src="../img/logo-header.png" alt=""> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="moreabout.html">About Mandalas</a></li>
-            <li><a href="faq.html">Häufige Fragen</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-            <li><a href="https://www.instagram.com/sh_mindful_art/" target="_blank">Instagram</a></li> <!-- durch Social Media Icon ersetzen -->
-            <li><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank">Pinterest</a></li> <!-- durch Social Media Icon ersetzen -->
-        </ul>
+    <!-- Hamburger -->
+    <div class="icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
 
-    </nav>
+    <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="moreabout.html">About Mandalas</a></li>
+        <li><a href="faq.html">Häufige Fragen</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li id="instagram-nav">
+            <a href="https://www.instagram.com/sh_mindful_art/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram fa-xl fa-beat-fade-hover"></i>
+            </a>
+        </li>
+        <li id="pinterest-nav">
+            <a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                <i class="fab fa-pinterest fa-xl fa-beat-fade-hover"></i>
+            </a>
+        </li>
+    </ul>
+
+</nav>
 
 <!-- Title, Subtitel, Textblock -->
 
-    <main class="flex-container">
+    <main>
 
-        <div id="title-section" class="flex-item">
+        <section id="title-section">
 
-            <h1>Mindful Art by Sieglinde Hödl</h1>
+            <h1>Mindful Art <br /> by Sieglinde Hödl</h1>
             <h2>Discover the world of dot art mandala painting</h2>
 
-            <img id="background-title" class="flex-item"
+            <img id="background-title"
                  src="../img/background_title.jpg"
                  alt=""> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
 
-        </div>
+        </section>
 
-        <div class="flex-item">
-            <img src="../img/main_image_landingpage.png"
-                 alt=""> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
-        </div>
+        <section>
+            <img id="main-image-landingpage"
+                 src="../img/main_image_landingpage.png"
+                 alt=""
+                 width="923"
+                 height="374">
+        </section>
 
-        <div id="main-text-landingpage" class="flex-item">
+        <section>
 
-            <p>Tauche ein in die faszinierende Welt der Dot Art Mandalas. Hier findest du einzigartige Kunstwerke, in denen die Harmonie von Farbe und Form auf ganz besondere Art und Weise zusammenkommt. Jeder Punkt und Pinselstrich wird mit Achtsamkeit gesetzt, um wahre Unikate zu schaffen.</p>
-            <p>Auf dieser Website kannst du mehr über die Geschichte der Mandala-Kunst erfahren, ihre Wurzeln und Bedeutungen erforschen. Lass dich von der Schönheit und Tiefe dieser Kunstform verzaubern und erfahre, wie Mandalas Meditation und Achtsamkeit vereinen.</p>
-            <p>Ich freue mich darauf, dich auf dieser inspirierenden Reise durch die Welt der Mandalas zu begleiten.</p>
+            <p>Tauche ein in die faszinierende Welt der Dot Art Mandalas. Hier findest du einzigartige Kunstwerke, in denen die Harmonie von Farbe und Form auf ganz besondere Art und Weise zusammenkommt. Jeder Punkt und Pinselstrich wird mit Achtsamkeit gesetzt, um wahre Unikate zu schaffen.
+                <br /><br /> Auf dieser Website kannst du mehr über die Geschichte der Mandala-Kunst erfahren, ihre Wurzeln und Bedeutungen erforschen. Lass dich von der Schönheit und Tiefe dieser Kunstform verzaubern und erfahre, wie Mandalas Meditation und Achtsamkeit vereinen.
+                <br /> Ich freue mich darauf, dich auf dieser inspirierenden Reise durch die Welt der Mandalas zu begleiten.</p>
 
-        </div>
+        </section>
 
     </main>
 
     <!-- Footer -->
 
-    <footer id="footer">
+    <footer class="footer-flex-container">
 
-        <nav id="footer-contact">
-            <h3 id="footer-title-contact">
+        <section id="footer-contact" class="footer-flex-item">
+
+            <h2 id="footer-title-contact">
             Contact & Social
-            </h3>
+            </h2>
             <ul>
                 <li><a href="contact.html">Kontakt</a></li>
-                <li><a href="https://www.instagram.com/sh_mindful_art/" target="_blank">Instagram</a></li>
-                <li><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank">Pinterest</a></li>
+                <li id="instagram"><a href="https://www.instagram.com/sh_mindful_art/" target="_blank">Instagram</a></li>
+                <li id="pinterest"><a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank">Pinterest</a></li>
             </ul>
-        </nav>
+        </section>
 
-        <div id="footer-copyright">
+        <section id="footer-copyright" class="footer-flex-item">
             <img id="logo-footer" src="../img/logo-footer.png" alt="Logo SH Mindful Art">
-            <p>COPYRIGHT © 2023 SH Mindful Art <br> Design BY ©SH Mindful Art</p>
-        </div>
+            <p>COPYRIGHT © 2023 SH Mindful Art </br>
+            Design BY ©SH Mindful Art</p>
+        </section>
 
-        <nav id="footer-legal">
-            <h3 id="footer-title-legal">
+        <section id="footer-legal" class="footer-flex-item">
+            <h2 id="footer-title-legal">
                 Rechtliches
-            </h3>
+            </h2>
             <ul>
-                <li><a href="">Impressum</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
                 <li><a href="">Datenschutz</a></li>
                 <li><a href="">Cookie Policy</a></li>
             </ul>
-        </nav>
+        </section>
 
     </footer>
 
