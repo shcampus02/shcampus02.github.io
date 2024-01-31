@@ -7,22 +7,16 @@
     display: flex; /* Flexbox */
     justify-content: center;
     align-items: center;
-    bottom: 0;
-    width: 100%;
-    height: max-content;
-    box-sizing: border-box;
-    padding: 0 240px;
+    align-self: end;
+    max-height: 200px;
 }
 
 .footer-flex-item {
     display: flex;
-    flex:1; /*damit jedes Element die gleiche Breite einnimmt*/
+    flex-basis: 20%;
     flex-direction: column;
 }
 
-#footer-contact {
-    margin-left: 0;
-}
 
 #footer-title-contact,
 #footer-title-legal {
