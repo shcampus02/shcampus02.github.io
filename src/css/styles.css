@@ -81,8 +81,8 @@ body {
         text-transform: uppercase;
         word-wrap: break-word;
         z-index: 2;
-        margin-bottom: 0px;
-        margin-top: 0px;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     h2 {
@@ -90,8 +90,8 @@ body {
         font-family: Poppins-Light, sans-serif;
         font-size: 1rem;
         font-weight: 300;
-        letter-spacing: 0.5px;
-        line-height: 30px;
+        letter-spacing: 0.02em;
+        line-height: 1.5; /* line-height ist das 1.5-fache der aktuellen Schriftgröße des Elements */
         word-wrap: break-word;
         text-align: center;
         z-index: 2;
@@ -117,47 +117,45 @@ body {
         align-items: center;
         font-family: Poppins-Light, sans-serif;
         font-size: 1rem;
-        letter-spacing: 0.5px;
-        line-height: 30px;
+        letter-spacing: 0.02em;
+        line-height: 1.8;
         word-wrap: break-word;
         z-index: 3;
 
         background: rgba(244, 240, 236);
-        border-radius: 70px;
-        padding: 10px 30px;
-        margin: 20px;
+        border-radius: 3vw; /* % der Viewport-Breite */
+        padding: 2%; /* 2% der Breite des Elements */
+        margin: 2%; /* 2% der Breite des Elements */
     }
 
     article > h2 {
         color: #4D5053;
         font-family: Poppins-Regular, sans-serif;
         font-weight: 600;
-        letter-spacing: 0.5px;
-        line-height: 30px;
+        letter-spacing: 0.02em;
+        line-height: 1.8;
         word-wrap: break-word;
         text-align: center;
         z-index: 2;
     }
 
     details {
-        padding: 20px;
+        padding: 2%;
     }
 
     details > summary {
         font-family: Poppins-Regular, sans-serif;
         font-weight: 600;
-        margin-bottom: 10px;
+        margin-bottom: 2%;
     }
 
 /* MAIN SECTION
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
 main {
-    margin: 100px auto; /* setzt Abstand zur Navigationsleiste */
-    max-width: 980px;
+    margin: 15vh auto; /* Setzt den Abstand zur Navigationsleiste auf 15% der Viewporthöhe */
+    max-width: 46em;
 }
-
-
 
 
 /* TITLE SECTIONS
@@ -172,18 +170,14 @@ main {
     justify-content: center;
     position: relative;
     width: 100%;
-    padding: 10px 0;
+    padding: 2% 2%;
 }
 
 #background-title {
-    border-radius: 70px;
+    border-radius: 4vw;
     height: 100%;
     width: 100%;
     position: absolute;
-    /*top: 0;*/
-    /*right: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
     z-index: 1;
 }
 
