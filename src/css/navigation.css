@@ -129,3 +129,67 @@
 /* RESPONSIVE NAVIGATION BAR
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
+.icon {
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#close-icon {
+    display: none;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+/* Hamburger Icon Styling */
+.icon#hamburger-icon {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.icon#hamburger-icon .bar {
+    width: 2rem;
+    height: 0.25rem;
+    background: #4D5053;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+/* Show Hamburger Icon and Hide Navigation Items on Smaller Screens */
+
+@media (max-width: 1000px) {
+    #navigation ul {
+        display: none;
+        height: 100vh; /* Set height to full viewport height */
+    }
+
+    #navigation {
+    justify-content: center; /* Center the menu items */
+    }
+
+    .icon {
+        display: flex;
+    }
+
+    #navigation ul.open {
+        display: block;  /* change 'none' to 'block' */
+    }
+
+    .icon#hamburger-icon.open {
+        display: none; /* Hide hamburger when navigation open */
+    }
+    #close-icon.open {
+        display: flex; /* Show close-menu when open */
+    }
+    #logo_header.hidden {
+    opacity: 0; /* Hide logo using opacity */
+    }
+}
