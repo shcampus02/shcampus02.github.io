@@ -48,15 +48,22 @@ html {
     font-family: Roboto, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: #F9F8F8;
+    background: rgb(250,246,242);
+    background: radial-gradient(circle, rgba(250,246,242,1) 75%, rgba(119,151,140,0.86) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    /* https://cssgradient.io/ */
+
 }
 
 body {
     display: grid; /* spannt Grid-Layout über ganzen Body auf */
     grid-template-rows: auto 1fr auto;
-    height: 100vh;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
 }
 
 /* FONTS GENERAL
