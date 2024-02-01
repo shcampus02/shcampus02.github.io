@@ -43,13 +43,14 @@ footer li {
 
 footer a {
     text-decoration: none;
+    color: #4D5053;
 }
 
 /* FOOTER COPYRIGHT & LOGO
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
 #footer-copyright > p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 300;
     list-style-type: none;
     padding-inline-start: 0;
