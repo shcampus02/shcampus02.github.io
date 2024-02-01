@@ -51,10 +51,10 @@
     box-sizing: border-box;
     color:black;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: 300;
     margin: 0;
-    padding: 10px; /*damit Hover Effekt besser aussieht*/
+    padding: 5px; /*damit Hover Effekt besser aussieht*/
     text-decoration:none; /*Unterstriche entfernen*/
     text-transform: uppercase;
     z-index: 2;
@@ -65,13 +65,13 @@
 
 [aria-current] {
     box-sizing: border-box;
-    color:#77978cdc;
+    color: rgba(105, 137, 126, 0.86);
     cursor: pointer;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 600;
     margin: 0;
     padding: 10px; /*damit Hover Effekt besser aussieht*/
-    text-decoration:none; /*Unterstriche entfernen*/
+    text-decoration: none; /*Unterstriche entfernen*/
     text-transform: uppercase;
     z-index: 2;
 }
@@ -93,7 +93,7 @@
     box-sizing: border-box;
     color:black;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 0.8rem;
     font-weight: 300;
     margin: 0;
     padding: 0; /*damit Hover Effekt besser aussieht*/
