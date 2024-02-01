@@ -165,12 +165,12 @@ main {
     align-items: center;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     height: auto;
     justify-content: center;
     position: relative;
     width: 100%;
     padding: 2% 2%;
+    margin: auto;
 }
 
 #background-title {
