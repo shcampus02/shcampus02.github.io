@@ -18,13 +18,14 @@
 
 #logo_header {
     display: inline-block;
-    height: 50px;
     margin-left: 240px;
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
     top: 0;
-    width: 240px;
+    width: 12rem;
+    height: auto;
+
 }
 
 #navigation ul {
