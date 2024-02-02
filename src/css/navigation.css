@@ -81,7 +81,7 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:not([aria-curre
 
 [aria-current] {
     box-sizing: border-box;
-    color: rgba(105, 137, 126, 0.86);
+    color: #4D5053;
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 600;
@@ -96,7 +96,7 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:not([aria-curre
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
 .fab {
-    color: #77978cdc;
+    color: rgba(105, 137, 126, 0.86);
     transition: color 0.5s ease;
 }
 
@@ -107,7 +107,7 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:not([aria-curre
 .instagram-nav > ul > li > a,
 .pinterest-nav > ul > li > a {
     box-sizing: border-box;
-    color:black;
+    color: #445d55;
     cursor: pointer;
     font-size: 0.8rem;
     font-weight: 300;
@@ -219,14 +219,14 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
     color:black;
     cursor: pointer;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
     text-decoration:none; /*Unterstriche entfernen*/
     text-transform: uppercase;
 }
 
 .mobile-nav [aria-current] {
-    color: rgba(105, 137, 126, 0.86);
+    color: rgb(68, 93, 85);
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
