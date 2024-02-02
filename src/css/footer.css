@@ -17,16 +17,18 @@
     flex-direction: column;
 }
 
+
 /* FOOTER CONTACT & LEGAL
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
 footer h2 {
-    font-size: 0.8rem;
+    font-size: 1.2vw;
     font-weight: 300;
     text-decoration: none; /*Unterstriche entfernen*/
     text-transform: uppercase;
     text-align: center;
 }
+
 
 footer ul {
     cursor: pointer;
@@ -36,6 +38,7 @@ footer ul {
     padding-inline-start: 0;
     text-align: center;
 }
+
 
 footer li {
     margin: 5px 0;
@@ -58,6 +61,7 @@ footer a {
     align-items: center;
     margin: 0;
     padding: 10px 0;
+    box-shadow: none;
 }
 
 #footer-copyright {
@@ -67,4 +71,27 @@ footer a {
 #logo-footer {
     width: 7rem;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .footer-flex-item {
+        flex-basis: 100%;
+    }
+
+    footer ul {
+        font-size: 2vw;
+    }
+
+    footer h2 {
+        font-size: 2.5vw;
+    }
+
+    #logo-footer {
+        width: 5rem;
+        height: auto;
+    }
+
+    #footer-copyright > p {
+        font-size: 1.5vw;
+    }
 }
