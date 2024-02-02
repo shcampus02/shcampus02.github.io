@@ -5,5 +5,9 @@ window.onload = function() {
     menu_btn.addEventListener('click', function () {
         menu_btn.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
+
+        // Aktualisiere aria-expanded
+        const ariaExpanded = menu_btn.getAttribute('aria-expanded') === 'true';
+        menu_btn.setAttribute('aria-expanded', !ariaExpanded);
     })
 }
