@@ -6,9 +6,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
         element.addEventListener('click', (event) => {
             event.preventDefault();
 
-            // Remove active class from all filters, then apply it to clicked filter
-            filterNavElements.forEach(link => link.classList.remove('active'));
-            element.classList.add('active');
+            // Remove 'current' class from all filters, then apply it to clicked filter
+            filterNavElements.forEach(link => link.classList.remove('current'));
+            element.classList.add('current');
 
             const filterValue = element.getAttribute('data-filter');
 

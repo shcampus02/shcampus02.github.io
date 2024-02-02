@@ -32,6 +32,8 @@
     margin: 0;
 }
 
+/* HOVER EFFECT FILTER */
+
 #filter-nav ul li a {
     text-decoration: none;
     color: #333;
@@ -50,6 +52,17 @@
     border-radius: 19px;
     text-decoration: none;
 }
+
+/* CURRENT FILTER HIGHLIGHTED */
+
+#filter-nav ul li a.current {
+    background: rgb(231, 224, 217);
+    color: #333;
+    border-radius: 19px;
+    text-decoration: none;
+}
+
+
 
 /* IMAGE GALLERY
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
