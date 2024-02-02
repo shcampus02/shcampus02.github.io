@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Breite der Seite passt sich an Breite des Geräts an, Initial-scale = Zoomlevel -->
     <title>Dot Art Mandalas by SH Mindful Art</title>
     <link rel="icon" type="image/x-icon" href="/src/img/favicon_lotus.ico">
     <link rel="stylesheet" href="/src/css/landingpage.css">
@@ -15,20 +15,42 @@
 
 <body id="landingpage" id="page-container">
 
-    <!-- Navigation -->
-
-    <nav id="navigation">
+    <header>
 
         <img id="logo_header" src="../img/logo-header.svg" alt="" width="250" height="72"> <!-- Kein Alternativtext gewählt da nicht relevant für den Inhalt -->
 
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="moreabout.html">About Mandalas</a></li>
+                <li><a href="faq.html">Häufige Fragen</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li class="instagram-nav">
+                    <a href="https://www.instagram.com/sh_mindful_art/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fab fa-instagram fa-xl fa-beat-fade-hover"></i>
+                    </a>
+                </li>
+                <li class="pinterest-nav">
+                    <a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
+                        <i class="fab fa-pinterest fa-xl fa-beat-fade-hover"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
         <!-- Hamburger-Icon Navigation-->
 
-        <div class="icon" id="hamburger-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="close-menu" id="close-icon">X</div>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+
+    </header>
+
+    <!-- Mobile Navigation-->
+
+    <nav class="mobile-nav">
 
         <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
@@ -36,19 +58,19 @@
             <li><a href="moreabout.html">About Mandalas</a></li>
             <li><a href="faq.html">Häufige Fragen</a></li>
             <li><a href="contact.html">Kontakt</a></li>
-            <li id="instagram-nav">
+            <li class="instagram-nav">
                 <a href="https://www.instagram.com/sh_mindful_art/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <i class="fab fa-instagram fa-xl fa-beat-fade-hover"></i>
                 </a>
             </li>
-            <li id="pinterest-nav">
+            <li class="pinterest-nav">
                 <a href="https://www.pinterest.at/sh_mindful_art/dot-art/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest">
                     <i class="fab fa-pinterest fa-xl fa-beat-fade-hover"></i>
                 </a>
             </li>
         </ul>
-
     </nav>
+
 
     <!-- Title, Subtitel, Textblock -->
 
@@ -66,11 +88,19 @@
         </section>
 
         <section>
-            <img id="main-image-landingpage"
+            <!-- Image abhängig von Bildschirmgröße -->
+            <img id="main-image-landingpage-large"
                  src="../img/main_image_landingpage.png"
                  alt=""
-                 width="923"
-                 height="374">
+                 width="3264"
+                 height="1428">
+
+            <img id="main-image-landingpage-small"
+                 src="../img/main_image_landingpage_small.png"
+                 alt=""
+                 width="1388"
+                 height="1388">
+
         </section>
 
         <section>

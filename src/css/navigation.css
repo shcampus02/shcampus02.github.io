@@ -1,12 +1,12 @@
 /* NAVIGATION BAR
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
-#navigation { /*Ganzer Navigationsblock */
+header { /*Ganzer Navigationsblock */
     align-items: center;
     background-color:rgba(244, 240, 236);
     border-bottom: 3px solid #77978c8e; /*Rahmenlinie unten vorher: #CDA274*/
     display: flex; /* Flexbox */
-    justify-content: space-between; /* Centriert entlang der Hauptachse */
+    justify-content: space-between; /* zentriert entlang der Hauptachse */
     margin: 0;
     padding: 0;
     position: fixed; /*Position beim Scrollen*/
@@ -25,16 +25,15 @@
     top: 0;
     width: 12rem;
     height: auto;
-
 }
 
-#navigation ul {
+header > nav > ul {
     letter-spacing: -0.5px;
     margin-right: 250px;
     padding: 0;
 }
 
-#navigation ul li { /*Abstand zwischen Navigationselementen*/
+header > nav > ul > li { /*Abstand zwischen Navigationselementen*/
     box-sizing: border-box;
     display: inline-block; /*Elemente nebeneinander*/
     list-style-type: none; /*ohne Aufzählungspunkte*/
@@ -45,10 +44,26 @@
     vertical-align: middle;
 }
 
+
+@media (max-width: 1490px) {
+    #logo_header {
+        margin-left: 5%;
+    }
+
+    header > nav > ul {
+        margin-right: 0%;
+    }
+
+    header {
+        justify-content: space-around;
+    }
+}
+
+
 /* NAVIGATIONSELEMENTE ALLGEMEIN
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
-#navigation ul li:not(#instagram-nav):not(#pinterest-nav) a:not([aria-current]) { /*restliche Texteinstellungen Navigation*/
+header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:not([aria-current]) { /*restliche Texteinstellungen Navigation*/
     box-sizing: border-box;
     color:black;
     cursor: pointer;
@@ -89,8 +104,8 @@
     animation: fa-beat-fade 1s infinite linear;
 }
 
-#instagram-nav ul li a,
-#pinterest-nav ul li a {
+.instagram-nav > ul > li > a,
+.pinterest-nav > ul > li > a {
     box-sizing: border-box;
     color:black;
     cursor: pointer;
@@ -106,7 +121,7 @@
 /* HOVER EFFEKTE NAVIGATION
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
-#navigation ul li:not(#instagram-nav):not(#pinterest-nav) a:after {
+header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:after {
     content: '';
     background: rgb(231, 224, 217);
     border-radius: 30px;
@@ -121,7 +136,7 @@
     z-index: -3;
 }
 
-#navigation ul li:not(#instagram-nav):not(#pinterest-nav) a:hover:after {
+header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
     height: 100%;
     width: 100%;
 }
@@ -129,67 +144,151 @@
 /* RESPONSIVE NAVIGATION BAR
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
-.icon {
-    display: none;
+/* HAMBURGER MENU ICON */
+
+.hamburger {
+    display: block;
+    position: relative;
+    width: 40px;
     cursor: pointer;
-    z-index: 10;
+    right: 2%;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
 }
 
-#close-icon {
-    display: none;
+.hamburger .bar, .hamburger:after, .hamburger:before { /* pseudo- elemente */
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #77978c;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+/* MOBILE NAVIGATION STYLING */
+
+.mobile-nav {
+    align-items: center;
+    background: rgb(250,246,242);
+    border-bottom: 3px solid #77978c8e; /*Rahmenlinie unten vorher: #CDA274*/
+    display: block; /* Flexbox */
+    justify-content: space-between; /* zentriert entlang der Hauptachse */
+    margin: 0;
+    padding-top: 120px;
+    position: fixed; /*Position beim Scrollen*/
+    top: 0;
+    left: 100%;
+    width: 100%; /*Breite*/
+    height: max-content;
+    min-height: 100vh;
+    z-index: 4;
+    transition: 0.4s;
+
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav > ul > li {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0; /*Innenabstand oben/unten, li/re*/
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.mobile-nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:not([aria-current]) {
+    color:black;
     cursor: pointer;
-    z-index: 10;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    text-decoration:none; /*Unterstriche entfernen*/
+    text-transform: uppercase;
+}
+
+.mobile-nav [aria-current] {
+    color: rgba(105, 137, 126, 0.86);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px; /*damit Hover Effekt besser aussieht*/
+    text-decoration: none; /*Unterstriche entfernen*/
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+
+/* HOVER EFFECT MOBILE NAV BAR
+------------------------------------ */
+
+.mobile-nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:after {
+    content: '';
+    background: rgb(231, 224, 217);
+    border-radius: 30px;
+    bottom: 0;
+    display: block;
     position: absolute;
-    left: 20px;
-    top: 20px;
+    margin-left: 25%;
+    margin-right: 20%;
+    transition: width 0.2s;
+    z-index: -3;
 }
 
-/* Hamburger Icon Styling */
-.icon#hamburger-icon {
-    flex-direction: column;
-    justify-content: space-around;
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    left: 20px;
-    top: 20px;
+.mobile-nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
+    height: 100%;
+    width: 50%;
 }
 
-.icon#hamburger-icon .bar {
-    width: 2rem;
-    height: 0.25rem;
-    background: #4D5053;
-    border-radius: 10px;
-    transition: all 0.3s linear;
-}
+/* MEDIA QUERY MOBILE NAV
+------------------------------------ */
 
-/* Show Hamburger Icon and Hide Navigation Items on Smaller Screens */
+    /* NORMALE NAVIGATION BEI KLEINEN BILDSCHIRMEN AUSBLENDEN */
 
-@media (max-width: 1000px) {
-    #navigation ul {
-        display: none;
-        height: 100vh; /* Set height to full viewport height */
-    }
+    @media (max-width: 1199px) {
+        header > nav {
+            display: none;
+        }
 
-    #navigation {
-    justify-content: center; /* Center the menu items */
-    }
+        #logo_header {
+            margin-left: 50%;
+            margin-right: 50%;
+        }
 
-    .icon {
-        display: flex;
+        .hamburger {
+            position: absolute;
+        }
     }
 
-    #navigation ul.open {
-        display: block;  /* change 'none' to 'block' */
-    }
+    /* MOBILE NAV & HAMBURGER EINBLENDEN */
 
-    .icon#hamburger-icon.open {
-        display: none; /* Hide hamburger when navigation open */
+    @media (min-width: 1200px) {
+
+        .mobile-nav {
+            display: none;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
     }
-    #close-icon.open {
-        display: flex; /* Show close-menu when open */
-    }
-    #logo_header.hidden {
-    opacity: 0; /* Hide logo using opacity */
-    }
-}
