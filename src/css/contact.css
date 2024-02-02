@@ -22,7 +22,7 @@
     border-radius: 1vw;
     font-size: 1rem;
     color: #4D5053;
-    font-family: Poppins-Light, sans-serif;
+    font-family: Poppins, sans-serif;
     letter-spacing: 0.02em;
     line-height: 1.5;
     outline-color: rgba(68, 93, 85, 0.56);
@@ -32,7 +32,7 @@
 #contact-form label {
     font-size: 1rem;
     color: #4D5053;
-    font-family: Poppins-Light, sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 300;
     letter-spacing: 0.02em;
 }

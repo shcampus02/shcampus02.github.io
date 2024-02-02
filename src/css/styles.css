@@ -1,43 +1,40 @@
 /* FONT-FACE
 ----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* TODO: Fehler beim Laden der Schriftarten mit relativen Pfad */
+
+/* roboto-regular - latin */
 @font-face {
-        font-family: 'Roboto-Black';
-        src: url('../fonts/Roboto-Black.ttf');
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://localhost:63342/project_mindfulart/src/fonts/roboto-v30-latin-regular.woff2') format('woff2');
 }
 
+/* poppins-300 - latin */
 @font-face {
-        font-family: 'Roboto-Bold';
-        src: url('../fonts/Roboto-Bold.ttf');
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url('http://localhost:63342/project_mindfulart/src/fonts/poppins-v20-latin-300.woff2') format('woff2');
 }
-
+/* poppins-regular - latin */
 @font-face {
-        font-family: 'Roboto-Light';
-        src: url('../fonts/Roboto-Light.ttf');
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://localhost:63342/project_mindfulart/src/fonts/poppins-v20-latin-regular.woff2') format('woff2');
 }
-
+/* poppins-500 - latin */
 @font-face {
-        font-family: 'Roboto-Medium';
-        src: url('../fonts/Roboto-Medium.ttf');
-}
-
-@font-face {
-        font-family: 'Roboto-Regular';
-        src: url('../fonts/Roboto-Regular.ttf');
-}
-
-@font-face {
-        font-family: 'Roboto-Thin';
-        src: url('../fonts/Roboto-Thin.ttf');
-}
-
-@font-face {
-        font-family: 'Poppins-Light';
-        src: url('../fonts/Poppins-Light.ttf');
-}
-
-@font-face {
-        font-family: 'Poppins-Regular';
-        src: url('../fonts/Poppins-Regular.ttf');
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('http://localhost:63342/project_mindfulart/src/fonts/poppins-v20-latin-500.woff2') format('woff2');
 }
 
 /* OVERALL PAGE LAYOUT
@@ -45,7 +42,7 @@
 
 html {
     font-size: 20px; /* damit entspricht 1rem 20px */
-    font-family: Roboto, Helvetica, sans-serif;
+    font-family: Roboto, Poppins, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background: rgb(250,246,242);
@@ -76,6 +73,7 @@ body {
     h1 {
         color: #4D5053;
         font-size: 3vw;
+        font-family: Roboto, sans-serif;
         font-weight: 400;
         text-align: center;
         text-transform: uppercase;
@@ -87,9 +85,9 @@ body {
 
     h2 {
         color: #4D5053;
-        font-family: Poppins-Light, sans-serif;
-        font-size: 1.5vw;
+        font-family: Poppins, sans-serif;
         font-weight: 300;
+        font-size: 1.5vw;
         letter-spacing: 0.02em;
         line-height: 1.5; /* line-height ist das 1.5-fache der aktuellen Schriftgröße des Elements */
         word-wrap: break-word;
@@ -99,9 +97,10 @@ body {
     }
 
     h3 {
-        font-family: Poppins-Light, sans-serif;
-        font-size: 1.5vw;
+        font-family: Poppins, sans-serif;
         font-weight: 300;
+        font-size: 1.5vw;
+
     }
 
 
@@ -115,7 +114,8 @@ body {
         justify-content: center;
         color: #4D5053;
         align-items: center;
-        font-family: Poppins-Light, sans-serif;
+        font-family: Poppins, sans-serif;
+        font-weight: 300;
         font-size: 1.2vw;
         letter-spacing: 0.02em;
         line-height: 1.8;
@@ -131,7 +131,7 @@ body {
 
     article > h2 {
         color: #4D5053;
-        font-family: Poppins-Regular, sans-serif;
+        font-family: Poppins, sans-serif;
         font-weight: 600;
         letter-spacing: 0.02em;
         line-height: 1.8;
@@ -146,7 +146,7 @@ body {
     }
 
     details > summary {
-        font-family: Poppins-Regular, sans-serif;
+        font-family: Poppins, sans-serif;
         font-weight: 600;
         margin-bottom: 2%;
     }
