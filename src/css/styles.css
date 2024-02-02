@@ -222,7 +222,6 @@ main {
     p, article, aside, details {
         font-size: 2vw;
         padding: 2%; /* 2% der Breite des Elements */
-        margin: 2%; /* 2% der Breite des Elements */
     }
 
 }
@@ -240,6 +239,7 @@ main {
 
     h2 {
         font-size: 3vw;
+        padding: 2%;
     }
 
     h3 {
