@@ -88,7 +88,7 @@ body {
     h2 {
         color: #4D5053;
         font-family: Poppins-Light, sans-serif;
-        font-size: 2vw;
+        font-size: 1.5vw;
         font-weight: 300;
         letter-spacing: 0.02em;
         line-height: 1.5; /* line-height ist das 1.5-fache der aktuellen Schriftgröße des Elements */
@@ -125,7 +125,6 @@ body {
         background: rgba(244, 240, 236);
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         border-radius: 3vw; /* % der Viewport-Breite */
-        /* TODO: Schattierung für innere Elemente in Boxen entfernen! */
         padding: 2%; /* 2% der Breite des Elements */
         margin: 2%; /* 2% der Breite des Elements */
     }
@@ -207,64 +206,47 @@ main {
     width: 80%;
     }
 
+    h1 {
+        font-size: 3vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+
+    h3 {
+        font-size: 2vw;
+    }
+
+    p, article, aside, details {
+        font-size: 2vw;
+        padding: 2%; /* 2% der Breite des Elements */
+        margin: 2%; /* 2% der Breite des Elements */
+    }
+
 }
 
 @media (max-width: 768px) {
 
     main {
-    margin: 15vh auto; /* Setzt den Abstand zur Navigationsleiste auf 15% der Viewporthöhe */
+    margin: 15vh auto;
     width: 95%;
     }
 
-    /* HEADINGS
-    ------------------------------------------*/
-
     h1 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     h2 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     h3 {
         font-size: 3vw;
     }
 
-    /* TEXT BLOCKS
-    ------------------------------------------*/
-
     p, article, aside, details {
-        font-size: 3vw;
-
-        background: rgba(244, 240, 236);
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        border-radius: 3vw; /* % der Viewport-Breite */
-        /* TODO: Schattierung für innere Elemente in Boxen entfernen! */
-        padding: 4%; /* 2% der Breite des Elements */
-        margin: 4%; /* 2% der Breite des Elements */
-    }
-
-    article > h2 {
-        color: #4D5053;
-        font-family: Poppins-Regular, sans-serif;
-        font-weight: 600;
-        letter-spacing: 0.02em;
-        line-height: 1.8;
-        word-wrap: break-word;
-        text-align: center;
-        z-index: 2;
-    }
-
-    details {
-        padding: 2%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-
-    details > summary {
-        font-family: Poppins-Regular, sans-serif;
-        font-weight: 600;
-        margin-bottom: 2%;
+        font-size: 2.5vw;
     }
 
 
@@ -273,7 +255,7 @@ main {
 @media (max-width: 480px) {
 
     main {
-    margin: 15vh auto; /* Setzt den Abstand zur Navigationsleiste auf 15% der Viewporthöhe */
+    margin: 15vh auto;
     width: 95%;
     }
 

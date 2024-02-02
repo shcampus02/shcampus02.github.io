@@ -6,7 +6,7 @@
     background-color:rgba(244, 240, 236);
     border-radius: 20px;
     width: 80%;
-    z-index: 4;
+    z-index: 3;
 }
 
 #filter-nav ul {
@@ -20,9 +20,14 @@
 
 #filter-nav ul li {
     flex: 1;
+    color: #4D5053;
     list-style-type: none;
     text-align: center;
-    font: 400 20px/1.5 Jost, serif; /* Kombiniert Font-Eigenschaften */
+    font-family: Poppins-Light, sans-serif;
+    font-weight: 300;
+    font-size: 1.2vw;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
     position: relative;
     margin: 0;
 }
@@ -76,6 +81,10 @@
     border: 1px solid #CDA274;
 }
 
+.gallery-flex-container > p {
+    box-shadow: none;
+}
+
 /* SUBTITLE IMAGES
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 .image-container figcaption {
@@ -121,7 +130,20 @@
     }
 }
 
+@media (max-width: 1024px) {
+    #filter-nav ul li {
+        font-size: 1.5vw;
+    }
+}
 
+@media (max-width: 768px) {
+    #filter-nav ul li {
+        font-size: 2.5vw;
+    }
+    #filter-nav {
+        width: 100%
+    }
+}
 
 
 
