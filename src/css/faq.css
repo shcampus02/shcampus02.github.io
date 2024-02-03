@@ -1,0 +1,120 @@
+.text-faq {
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.title-faq {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title-faq > #background-title {
+    border-radius: 2vw;
+}
+
+
+/* Dropdown Styling
+ -----------------------------------------------------------------*/
+
+.wrapper {
+    color: #4D5053;
+    font-family: Poppins, sans-serif;
+    font-weight: 300;
+    font-size: 1.2vw;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+    word-wrap: break-word;
+    text-align: center;
+    display: block;
+}
+
+.wrapper.active .arrow {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.wrapper.active .arrow:before {
+    transform: translate(10px, 0);
+}
+
+.wrapper.active .arrow:after {
+    transform: rotate(90deg) translate(10px, 0);
+}
+
+.wrapper.active ul {
+    opacity: 1;
+    height: auto;
+    width: 90%;
+}
+
+.wrapper ul {
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.3s, height 0.3s;
+}
+
+.wrapper li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+/* Pfeil-Styling
+ -----------------------------------------------------------------*/
+
+.arrow {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    position: relative;
+    bottom: -5px;
+    left: -10%;
+    transition: 0.4s ease;
+    margin-top: 2px;
+    text-align: left;
+    transform: rotate(45deg);
+    float: right;
+}
+
+.arrow:before,
+.arrow:after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 3px;
+    background-color: rgba(105, 137, 126, 0.86);
+    transition: 0.4s ease;
+}
+
+.arrow:after {
+    position: absolute;
+    transform: rotate(90deg);
+    top: -5px;
+    left: 5px;
+}
+
+/* Question Styling
+ -----------------------------------------------------------------*/
+
+.click-text {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    color: #4D5053;
+    font-size: 1.5vw;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    border-bottom: 2px solid rgba(105, 137, 126, 0.86);
+    transition: 0.15s ease;
+    box-shadow: none;
+    background: none;
+    border-radius: 0;
+}
+
+.click-text:hover {
+    color: rgba(105, 137, 126, 0.86);
+    border-bottom: 2px solid #eee;
+}
+
+
