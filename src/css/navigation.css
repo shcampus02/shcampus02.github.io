@@ -201,6 +201,10 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
 
 }
 
+.mobile-nav.notransition { /* Effekt ausgeblendet wenn auf die vorherige Seite zurück gegangen wird */
+  transition: none;
+}
+
 .mobile-nav.is-active {
     left: 0;
 }
