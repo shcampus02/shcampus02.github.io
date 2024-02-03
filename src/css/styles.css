@@ -156,7 +156,10 @@ body {
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
 main {
-    margin: 15vh auto; /* Setzt den Abstand zur Navigationsleiste auf 15% der Viewporthöhe */
+    margin-top: 15vh;/* Setzt den Abstand zur Navigationsleiste auf 15% der Viewporthöhe */
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
     width: 60%;
 }
 
@@ -185,6 +188,33 @@ main {
     z-index: 1;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
+/* Back to top Link
+----------------------------------------------------------------------------------------------------------------------------------------*/
+
+#back-to-top {
+    background: rgb(231, 224, 217);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 3vw;
+    padding: 5%;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #4D5053;
+    font-size: 4vw;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 0;
+    width: 60%
+
+
+}
+
+
 
 /* Responsive Design
 ----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -256,7 +286,10 @@ main {
 @media (max-width: 480px) {
 
     main {
-    margin: 15vh auto;
+    margin-top: 13vh;
+    margin-bottom: 5vh;
+    margin-left: auto;
+    margin-right: auto;
     width: 95%;
     }
 
