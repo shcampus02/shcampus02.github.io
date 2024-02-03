@@ -37,7 +37,7 @@ footer li {
 }
 
 #footer-legal > ul > li {
-    font-size: 1vw;
+    font-size: .9vw;
 }
 
 #footer-social > ul > li {
@@ -49,22 +49,12 @@ footer li {
     color: #4D5053;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
+    text-transform: uppercase;
 }
 
 #footer-legal > ul > li > a:hover {
-    animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+    font-weight: 600;
+    color: #4D5053;
 }
 
 
