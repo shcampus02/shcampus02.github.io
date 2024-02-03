@@ -235,7 +235,7 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
 .mobile-nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:not([aria-current]) {
     color:black;
     cursor: pointer;
-    font-size: 6vw;
+    font-size: 3vw;
     font-weight: 400;
     margin: 0;
     text-decoration:none; /*Unterstriche entfernen*/
@@ -245,7 +245,7 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
 .mobile-nav [aria-current] {
     color: rgb(68, 93, 85);
     cursor: pointer;
-    font-size: 6vw;
+    font-size: 3vw;
     font-weight: 600;
     text-decoration: none; /*Unterstriche entfernen*/
     text-transform: uppercase;
@@ -254,7 +254,7 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
 
 .mobile-nav > ul > .instagram-nav > a,
 .mobile-nav > ul > .pinterest-nav > a {
-    font-size: 7vw;
+    font-size: 3vw;
     font-weight: 300;
 }
 
@@ -283,7 +283,7 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
 
     /* NORMALE NAVIGATION BEI KLEINEN BILDSCHIRMEN AUSBLENDEN */
 
-    @media (max-width: 1199px) {
+    @media (max-width: 1023px) {
         header > nav {
             display: none;
         }
@@ -299,11 +299,12 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
         .hamburger {
             position: absolute;
         }
+
     }
 
     /* MOBILE NAV & HAMBURGER EINBLENDEN */
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1024px) {
 
         .mobile-nav {
             display: none;
@@ -314,3 +315,37 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
         }
 
     }
+
+@media (max-width: 768px) {
+    .mobile-nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:not([aria-current]) {
+            font-size: 4vw;
+        }
+
+        .mobile-nav [aria-current] {
+            font-size: 4vw;
+        }
+
+        .mobile-nav > ul > .instagram-nav > a,
+        .mobile-nav > ul > .pinterest-nav > a {
+            font-size: 4vw;
+        }
+}
+
+@media (max-width: 480px) {
+        .mobile-nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:not([aria-current]) {
+            font-size: 6vw;
+        }
+
+        .mobile-nav [aria-current] {
+            font-size: 6vw;
+        }
+
+        .mobile-nav > ul > .instagram-nav > a,
+        .mobile-nav > ul > .pinterest-nav > a {
+            font-size: 7vw;
+        }
+
+        .mobile-nav > ul {
+            width: 70%
+        }
+}
