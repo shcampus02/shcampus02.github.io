@@ -270,7 +270,7 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
         }
 
         #logo_header {
-            margin-left: 50%;
+            margin-left: 0;
             margin-right: 50%;
         }
 
