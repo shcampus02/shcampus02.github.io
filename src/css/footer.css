@@ -42,6 +42,7 @@ footer li {
 
 #footer-social > ul > li {
     margin-right: 10px;
+    margin-left: 10px;
 
 }
 #footer-legal > ul > li > a {
@@ -102,4 +103,26 @@ footer li {
     #footer-legal > ul > li {
     font-size: 2vw;
     }
+}
+
+@media (max-width: 480px) {
+    #logo-footer {
+        width: 7rem;
+        height: auto;
+    }
+    footer ul {
+        font-size: 6vw;
+    }
+    #footer-copyright > p {
+        font-size: 3vw;
+    }
+    #footer-legal > ul > li {
+    font-size: 3vw;
+    }
+
+    #footer-legal > ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
 }

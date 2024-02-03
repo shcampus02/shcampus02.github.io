@@ -126,7 +126,7 @@ body {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         border-radius: 3vw; /* % der Viewport-Breite */
         padding: 2%; /* 2% der Breite des Elements */
-        margin: 2%; /* 2% der Breite des Elements */
+        margin: 3% 0; /* 2% der Breite des Elements */
     }
 
     article > h2 {
@@ -140,16 +140,6 @@ body {
         z-index: 2;
     }
 
-    details {
-        padding: 2%;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    }
-
-    details > summary {
-        font-family: Poppins, sans-serif;
-        font-weight: 600;
-        margin-bottom: 2%;
-    }
 
 
 /* MAIN SECTION
@@ -286,11 +276,25 @@ main {
 @media (max-width: 480px) {
 
     main {
-    margin-top: 13vh;
-    margin-bottom: 5vh;
-    margin-left: auto;
-    margin-right: auto;
-    width: 95%;
+        margin: 13vh auto 5vh;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+        padding: 1vw;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    p, article, aside, details {
+        font-size: 4vw;
     }
 
 }

@@ -1,7 +1,11 @@
+.text-content > p {
+    display: inline-block; /* Damit <b> Text im Fließtext angezeigt wird */
+}
+
 #main-image-landingpage-large {
     width: 100%;
     height: auto;
-    margin: 3vw 0;
+    margin-top: 3vw;
 }
 
 #main-image-landingpage-small {
@@ -14,11 +18,13 @@
     }
     #main-image-landingpage-small {
         display: block;
-        width: 50%;
+        width: 80%;
         height: auto;
         margin: 3vw auto;
     }
 }
+
+
 
 
 

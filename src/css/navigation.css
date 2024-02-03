@@ -59,6 +59,13 @@ header > nav > ul > li { /*Abstand zwischen Navigationselementen*/
     }
 }
 
+@media (max-width: 768px) {
+    #logo_header  {
+        padding-top: 3vw;
+        padding-bottom: 1vw;
+    }
+}
+
 
 /* NAVIGATIONSELEMENTE ALLGEMEIN
 ----------------------------------------------------------------------------------------------------------------------------------------*/
@@ -276,6 +283,9 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:hover:after {
         #logo_header {
             margin-left: 0;
             margin-right: 50%;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+
         }
 
         .hamburger {
