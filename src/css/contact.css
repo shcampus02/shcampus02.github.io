@@ -31,6 +31,8 @@
 /* Formular Labels */
 #contact-form label {
     font-size: 1rem;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
     color: #4D5053;
     font-family: Poppins, sans-serif;
     font-weight: 300;
@@ -59,4 +61,59 @@
 #contact-form textarea {
     resize: vertical;
     min-height: 10rem;
+}
+
+
+@media (max-width: 768px) {
+    #contact-form {
+        border-radius: 4vw;
+    }
+
+    /* Formular Eingabefelder */
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        width: 90%;
+        padding: 5px 5px;
+        border-radius: 1vw;
+        font-size: 2.5vw;
+    }
+
+    /* Formular Labels */
+    #contact-form label {
+        font-size: 3vw;
+    }
+
+    /* Senden Button */
+    #contact-form input[type="submit"] {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-form {
+        margin: 5vw auto;
+        width: 70%;
+        padding: 2vw 5vw;
+    }
+
+    /* Formular Eingabefelder */
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        width: 100%;
+        padding: 10px 10px;
+        border-radius: 1vw;
+        font-size: 4vw;
+    }
+
+    /* Formular Labels */
+    #contact-form label {
+        font-size: 4vw;
+    }
+
+    /* Senden Button */
+    #contact-form input[type="submit"] {
+        font-size: 4vw;
+    }
 }
