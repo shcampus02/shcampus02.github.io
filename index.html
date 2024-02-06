@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="src/css/navigation.css">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/fonts/fontawesome-free-6.5.1-web/css/all.min.css"/>
+    <link rel="stylesheet" href="src/fonts/fontawesome-free-6.5.1-web/css/all.min.css">
 
 </head>
 
-<body id="landingpage" id="page-container">
+<body>
 
     <header>
 
@@ -46,7 +46,7 @@
         <!-- Hamburger-Icon Navigation-->
 
         <button class="hamburger" aria-label="Navigation" aria-expanded="false">
-          <div class="bar"></div>
+          <span class="bar"></span>
         </button>
 
     </header>
@@ -81,7 +81,7 @@
 
         <section id="title-section">
 
-            <h1>Mindful Art <br /> by Sieglinde Hödl</h1>
+            <h1>Mindful Art <br> by Sieglinde Hödl</h1>
             <h2>Discover the world of dot art mandala painting</h2>
 
             <img id="background-title"
@@ -90,25 +90,25 @@
 
         </section>
 
-        <section id="main-image-section">
+        <figure id="main-image-section">
             <!-- Image abhängig von Bildschirmgröße -->
             <img src="src/img/main_image_landingpage.png"
                  srcset="src/img/main_image_landingpage.png 3264w, src/img/main_image_landingpage_small.png 1388w"
                  sizes="(min-width: 768px) 3264px, 100vw"
-                 alt=""
+                 alt="Dekoratives Hauptbild im Dot Art Mandala Stil"
                  width="3264"
                  height="1428">
-        </section>
+        </figure>
 
         <section class="text-content">
-
+            <h3 class="visually-hidden">Beschreibung meines Website-Inhalts</h3>
             <p>Tauche ein in die faszinierende Welt der Dot Art Mandalas. Hier findest du einzigartige Kunstwerke,
                 in denen die <b>Harmonie von Farbe und Form</b> auf ganz besondere Art und Weise zusammenkommt.
                 Jeder Punkt und Pinselstrich wird mit Achtsamkeit gesetzt, um <b>wahre Unikate</b> zu schaffen.
-                <br /><br /> Auf dieser Website kannst du mehr über die Geschichte der Mandala-Kunst erfahren,
+                <br><br> Auf dieser Website kannst du mehr über die Geschichte der Mandala-Kunst erfahren,
                 ihre Wurzeln und Bedeutungen erforschen. Lass dich von der Schönheit und Tiefe dieser Kunstform verzaubern und erfahre,
                 wie Mandalas Meditation und Achtsamkeit vereinen.
-                <br /> Ich freue mich darauf, dich auf dieser <b>inspirierenden Reise</b> durch die Welt der Mandalas zu begleiten.</p>
+                <br> Ich freue mich darauf, dich auf dieser <b>inspirierenden Reise</b> durch die Welt der Mandalas zu begleiten.</p>
 
         </section>
 
@@ -119,12 +119,14 @@
     <footer class="footer-flex-container">
 
         <section class="footer-flex-item">
+            <h4 class="visually-hidden">Logo und Link zur Startseite</h4>
             <a href="index.html">
                 <img id="logo-footer" src="src/img/logo-footer.svg" alt="Zurück zur Startseite" width="500" height="500">
             </a>
         </section>
 
         <section class="footer-flex-item" id="footer-legal">
+            <h4 class="visually-hidden">Rechtliches</h4>
             <ul>
                 <li><a href="src/html/impressum.html">Impressum</a></li>
                 <li><a href="src/html/datenschutz.html">Datenschutz</a></li>
@@ -133,10 +135,12 @@
         </section>
 
         <section id="footer-copyright" class="footer-flex-item">
+            <h4 class="visually-hidden">Copyright</h4>
             <p>COPYRIGHT © 2024 Sieglinde Hödl</p>
         </section>
 
         <section class="footer-flex-item" id="footer-social">
+            <h4 class="visually-hidden">Links zu meinen Social-Media Kanälen</h4>
             <ul>
                 <li class="instagram-nav">
                     <a href="https://www.instagram.com/sh_mindful_art/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
