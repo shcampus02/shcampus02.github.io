@@ -27,7 +27,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+  src: url('/src/fonts/poppins-v20-latin-regular.woff2') format('woff2');
 }
 /* poppins-500 - latin */
 @font-face {
@@ -35,7 +35,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
+  src: url('/src/fonts/poppins-v20-latin-500.woff2') format('woff2');
 }
 
 /* OVERALL PAGE LAYOUT
