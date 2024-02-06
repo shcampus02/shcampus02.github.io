@@ -3,8 +3,6 @@
 Welcome to the University Website Project repository! 
 This project is part of my university coursework, where I aim to create a website dedicated to mandala art. Below, you'll find information about the project and how to access the Figma design.
 
-Have a look at the current status of my website: https://shcampus02.github.io/
-
 ## Project Overview
 
 The University Website Project focuses on the creation of a website dedicated to the captivating world of mandala art. 
