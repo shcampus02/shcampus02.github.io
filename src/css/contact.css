@@ -40,7 +40,7 @@
 }
 
 /* Senden Button */
-#contact-form input[type="submit"] {
+#contact-form button {
     background-color: #4D5053;
     color: white;
     padding: 14px 20px;
@@ -53,7 +53,7 @@
 }
 
 /* Button Hover Stil */
-#contact-form input[type="submit"]:hover {
+#contact-form button:hover {
     background-color: #77978cdc;
 }
 
@@ -85,7 +85,7 @@
     }
 
     /* Senden Button */
-    #contact-form input[type="submit"] {
+    #contact-form button {
         font-size: 3vw;
     }
 }
@@ -113,7 +113,7 @@
     }
 
     /* Senden Button */
-    #contact-form input[type="submit"] {
+    #contact-form button {
         font-size: 4vw;
     }
 }
