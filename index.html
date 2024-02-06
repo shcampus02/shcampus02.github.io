@@ -92,18 +92,12 @@
 
         <section>
             <!-- Image abhängig von Bildschirmgröße -->
-            <img id="main-image-landingpage-large"
-                 src="src/img/main_image_landingpage.png"
+            <img src="src/img/main_image_landingpage.png"
+                 srcset="src/img/main_image_landingpage.png 3264w, src/img/main_image_landingpage_small.png 1388w"
+                 sizes="(min-width: 768px) 3264px, 100vw"
                  alt=""
                  width="3264"
                  height="1428">
-
-            <img id="main-image-landingpage-small"
-                 src="src/img/main_image_landingpage_small.png"
-                 alt=""
-                 width="1388"
-                 height="1388">
-
         </section>
 
         <section class="text-content">

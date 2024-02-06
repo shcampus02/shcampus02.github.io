@@ -2,21 +2,14 @@
     display: inline-block; /* Damit <b> Text im Fließtext angezeigt wird */
 }
 
-#main-image-landingpage-large {
+section img {
     width: 100%;
     height: auto;
     margin-top: 3vw;
 }
 
-#main-image-landingpage-small {
-    display: none;
-}
-
 @media (max-width: 768px) {
-    #main-image-landingpage-large {
-        display: none;
-    }
-    #main-image-landingpage-small {
+    section img {
         display: block;
         width: 80%;
         height: auto;
