@@ -196,14 +196,18 @@ main {
     color: #4D5053;
     font-size: 2vw;
     font-family: Roboto, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    margin-bottom: 0;
+    margin: 10% auto 0;
     width: 50%
+}
+
+#back-to-top:hover,
+#back-to-top:focus {
+    background: #77978c8e;
+    color: rgba(244, 240, 236);
+    font-weight: 500;
 }
 
 /* SCROLLBAR

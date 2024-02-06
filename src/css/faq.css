@@ -57,7 +57,8 @@ details[open] > summary .arrow {
     transform: rotate(90deg);
 }
 
-summary:hover {
+summary:hover,
+summary:focus {
     color: #77978C;
 }
 

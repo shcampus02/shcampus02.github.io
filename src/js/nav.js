@@ -20,7 +20,7 @@ window.onload = function() {
     function toggleMenu() {
         menu_btn.classList.toggle('is-active');
         mobile_menu.classList.toggle('is-active');
-        // Messing with aria-expanded attribute
+
         const ariaExpanded = menu_btn.getAttribute('aria-expanded') === 'true';
         menu_btn.setAttribute('aria-expanded', !ariaExpanded);
     }

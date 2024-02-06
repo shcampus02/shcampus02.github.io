@@ -46,11 +46,13 @@
     justify-content: center;
 }
 
-#filter-nav ul li:hover a {
+#filter-nav ul li:hover a,
+#filter-nav ul li:focus a {
     background: rgb(231, 224, 217);
     color: #333;
     border-radius: 19px;
     text-decoration: none;
+    font-weight: 400;
 }
 
 /* CURRENT FILTER HIGHLIGHTED */
@@ -111,7 +113,14 @@
 aside > a {
     text-decoration: none;
     color: #4D5053;
-    font-weight: 400;
+    font-weight: 500;
+}
+
+aside > a:hover,
+aside > a:focus {
+    text-decoration: none;
+    color: #4D5053;
+    font-weight: 600;
 }
 
 /* OVERLAY IMAGES
@@ -129,7 +138,8 @@ aside > a {
 }
 
 /* Ändert die Deckkraft des .overlay-image Elements beim Hover auf .image-item */
-.image-container:hover .overlay-image {
+.image-container:hover .overlay-image,
+.image-container:active .overlay-image{
     opacity: 1;
 }
 
@@ -171,11 +181,16 @@ aside > a {
         width: 95%;
     }
 
+    #filter-nav ul li {
+        font-size: 2.5vw;
+    }
+
     #filter-nav ul li a {
         border-radius: 13px;
     }
 
-    #filter-nav ul li:hover a {
+    #filter-nav ul li:hover a,
+    #filter-nav ul li:focus a {
         border-radius: 13px;
     }
 

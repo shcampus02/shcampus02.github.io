@@ -107,7 +107,8 @@ header > nav > ul > li:not(.instagram-nav):not(.pinterest-nav) a:not([aria-curre
     transition: color 0.5s ease;
 }
 
-.fa-beat-fade-hover:hover {
+.fa-beat-fade-hover:hover,
+.fa-beat-fade-hover:focus {
     animation: fa-beat-fade 1s infinite linear;
 }
 
