@@ -45,7 +45,7 @@ html {
     margin: 0;
     padding: 0;
     background: rgb(249,248,248);
-background: radial-gradient(circle, rgba(249,248,248,1) 75%, rgba(119,151,140,0.86) 100%);
+    background: radial-gradient(circle, rgba(249,248,248,1) 75%, rgba(119,151,140,0.86) 100%);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -153,10 +153,7 @@ body {
 ----------------------------------------------------------------------------------------------------------------------------------------*/
 
 main {
-    margin-top: 15vh;/* Setzt den Abstand zur Navigationsleiste auf 15% der Viewporthöhe */
-    margin-bottom: 5vh;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 15vh auto 5vh;
     width: 60%;
 }
 

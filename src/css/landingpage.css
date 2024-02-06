@@ -2,14 +2,14 @@
     display: inline-block; /* Damit <b> Text im Fließtext angezeigt wird */
 }
 
-section img {
+#main-image-section img {
     width: 100%;
     height: auto;
     margin-top: 3vw;
 }
 
 @media (max-width: 768px) {
-    section img {
+    #main-image-section img {
         display: block;
         width: 80%;
         height: auto;
