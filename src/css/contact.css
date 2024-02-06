@@ -53,7 +53,8 @@
 }
 
 /* Button Hover Stil */
-#contact-form button:hover {
+#contact-form button:hover,
+#contact-form button:focus {
     background-color: #77978cdc;
 }
 
