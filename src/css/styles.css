@@ -82,7 +82,7 @@ body {
         margin-top: 0;
     }
 
-    h2 {
+    h2, #contact-form label {
         color: #4D5053;
         font-family: Poppins, sans-serif;
         font-weight: 300;
@@ -260,7 +260,7 @@ main {
         font-size: 3vw;
     }
 
-    h2 {
+    h2, #contact-form label {
         font-size: 2vw;
     }
 
@@ -296,7 +296,7 @@ main {
         font-size: 4vw;
     }
 
-    h2 {
+    h2, #contact-form label {
         font-size: 3vw;
         padding: 2%;
     }
@@ -331,7 +331,7 @@ main {
         font-size: 6vw;
     }
 
-    h2 {
+    h2, #contact-form label {
         font-size: 4vw;
         padding: 1vw;
     }

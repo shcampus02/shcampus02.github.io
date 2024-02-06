@@ -28,15 +28,9 @@
     outline-color: rgba(68, 93, 85, 0.56);
 }
 
-/* Formular Labels */
 #contact-form label {
-    font-size: 1rem;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    color: #4D5053;
-    font-family: Poppins, sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.02em;
 }
 
 /* Senden Button */
@@ -80,11 +74,6 @@
         font-size: 2.5vw;
     }
 
-    /* Formular Labels */
-    #contact-form label {
-        font-size: 3vw;
-    }
-
     /* Senden Button */
     #contact-form button {
         font-size: 3vw;
@@ -105,11 +94,6 @@
         width: 100%;
         padding: 10px 10px;
         border-radius: 1vw;
-        font-size: 4vw;
-    }
-
-    /* Formular Labels */
-    #contact-form label {
         font-size: 4vw;
     }
 
